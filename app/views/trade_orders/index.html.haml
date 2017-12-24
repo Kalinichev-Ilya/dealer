@@ -1,16 +1,17 @@
 %h1 hello fellas
 %h2
   ="Saved #{@count}"
-
-%table
-  %thead
-    %tr
-      %th Trade id
-      %th Type
-      %th Quantity
-      %th Price
-      %th Amount
-      %th Date
-  %tbody
-    = render @trade_orders if @trade_orders.any?
+%div.col-lg-9
+  %table{class: "table table-dark table-responsive-sm"}
+    %caption exmo.me
+    %thead{class: "thead_orders"}
+      %tr
+        %th Trade id
+        %th Type
+        %th Quantity
+        %th Price
+        %th Amount
+        %th Date
+    %tbody
+      = render @trade_orders if @trade_orders.any?
 %br
