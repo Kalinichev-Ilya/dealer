@@ -1,2 +1,2 @@
-web: bundle exec puma -p $PORT -C ./config/puma.rb
-worker: bundle exec sidekiq
+web: bundle exec thin start -p $PORT
+worker: bundle exec sidekiq -c 5 -v
