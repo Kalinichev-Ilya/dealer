@@ -1,0 +1,16 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+
+/node_modules
+/yarn-error.log
+
+.byebug_history
+
+.idea
+Gemfile.lock
+dump.rdb
+
