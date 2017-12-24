@@ -12,5 +12,5 @@
       %th Amount
       %th Date
   %tbody
-    = render @trade_orders
+    = render @trade_orders if @trade_orders.any?
 %br
