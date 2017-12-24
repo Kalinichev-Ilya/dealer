@@ -1,0 +1,16 @@
+%h1 hello fellas
+%h2
+  ="Saved #{@count}"
+
+%table
+  %thead
+    %tr
+      %th Trade id
+      %th Type
+      %th Quantity
+      %th Price
+      %th Amount
+      %th Date
+  %tbody
+    = render @trade_orders
+%br

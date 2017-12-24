@@ -1,0 +1,7 @@
+%tr{class: "#{trade_order.trade_type}"}
+  %td= trade_order.trade_id
+  %td= trade_order.trade_type
+  %td= trade_order.quantity
+  %td= trade_order.price
+  %td= trade_order.amount
+  %td= DateTime.strptime(trade_order.unix_date.to_s,'%s')
