@@ -6,4 +6,7 @@
 # "unix_date"=>1514116770
 
 class TradeOrder < ApplicationRecord
+  def time
+    Time.at(unix_date).strftime('%I:%M %p')
+  end
 end
