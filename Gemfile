@@ -60,3 +60,7 @@ gem 'rest-client'
 gem 'pg', '0.20'
 
 gem 'haml-rails'
+
+gem 'pry'
+
+gem 'dotenv-rails'
